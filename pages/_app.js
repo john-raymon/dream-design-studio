@@ -7,18 +7,20 @@ import { Button } from 'lite-react-ui';
 function MyApp({ Component, pageProps }) {
   return (
     <div className="font-base flex flex-col relative min-h-screen w-full bg-rocasole-gray">
-      <header className="flex container max-w-6xl mx-auto mt-14 px-6">
-        <div className="w-full mx-auto">
-          <div className="w-32 h-32">
-            <Logo />
+      <div className="z-30 md:z-20 bg-rocasole-gray">
+        <header className="flex container max-w-6xl mx-auto mt-14 px-6">
+          <div className="w-full mx-auto">
+            <div className="w-32 h-32">
+              <Logo />
+            </div>
           </div>
-        </div>
-      </header>
-      <Component {...pageProps} />
-      <footer className="w-full py-12 bg-black sticky bottom-0">
-        <div className="flex justify-between w-full max-w-6xl mx-auto">
-          <div className="justify-between flex flex-col text-white">
-            <ul className="flex space-x-4">
+        </header>
+        <Component {...pageProps} />
+      </div>
+      <footer className="z-20 w-full p-12 bg-black sticky bottom-0">
+        <div className="flex flex-col md:flex-row justify-between w-full space-y-6 max-w-6xl mx-auto">
+          <div className="mt-6 md:mt-0 order-2 md:order-1 justify-between flex flex-col text-white space-y-6">
+            <ul className="flex w-full text-center flex-col md:flex-row md:space-x-4">
               <li>
                 <a>About</a>
               </li>
@@ -35,7 +37,7 @@ function MyApp({ Component, pageProps }) {
                 <a>Blog</a>
               </li>
             </ul>
-            <div className="flex items-center space-x-6">
+            <div className="flex self-center md:self-start items-center space-x-6">
               <div className="w-12 h-12">
                 <FooterLogo />
               </div>
@@ -44,8 +46,8 @@ function MyApp({ Component, pageProps }) {
               </p>
             </div>
           </div>
-          <div className="text-white flex flex-col justify-between space-y-5">
-            <p className="text-lg text-right">
+          <div className="order-1 md:order-2 text-white flex flex-col justify-between space-y-5">
+            <p className="text-lg text-center md:text-right">
               Founder story: Why we&apos;re building Rocasole for parents.
             </p>
             <Button inverted buttonType="tertiary">

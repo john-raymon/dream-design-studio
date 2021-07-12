@@ -34,8 +34,10 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full lg:w-2/5">
-              {/* // eslint-disable-next-line @next/next/no-img-element */}
-              <img alt="small shoes" className="w-2/6 -mt-24 lg:mt-0 lg:w-3/4 ml-auto" src="/shoe-hero.png" />
+              {
+              // eslint-disable-next-line @next/next/no-img-element 
+              (<img alt="small shoes" className="w-2/6 -mt-24 lg:mt-0 lg:w-3/4 ml-auto" src="/shoe-hero.png" />)
+              }
             </div>
           </div>
           <div className="relative w-full flex flex-col colorful-background mt-8 lg:mt-10 pb-8">
