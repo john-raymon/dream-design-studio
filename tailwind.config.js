@@ -5,10 +5,12 @@ module.exports = {
     },
     extend: {
       colors: {
-        'rocasole-gray': '#ececec',
+        'rocasole-gray': '#ECECEC',
       },
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }
