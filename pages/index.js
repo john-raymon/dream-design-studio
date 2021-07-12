@@ -49,7 +49,8 @@ export default function Home() {
                     1.
                     <br/>
                     <span className="block text-2xl lg:text-lg leading-tight pt-5 pr-10">
-                      We’ll provide you with a shipping label to send in mint condition shoes your child has outgrown. 
+                      Send us a picture of your child&apos;s shoe. 
+                      We&apos;ll review it and give you a price estimate along with a shipping label to print and ship the shoe.
                     </span>
                   </p>
                 </div>
@@ -60,10 +61,8 @@ export default function Home() {
                     2.
                     <br/>
                     <span className="block text-2xl lg:text-lg leading-tight pt-5 pr-10">
-                      We’ll review the shoe,
-                      give it a value,
-                      then provide you with
-                      store credit.
+                      When we recieve the shoe, we&apos;ll send you
+                      store credit for the price of the shoe.
                     </span>
                   </p>
                 </div>
@@ -74,8 +73,8 @@ export default function Home() {
                     3.
                     <br/>
                     <span className="block text-2xl lg:text-lg leading-tight pt-5 pr-10">
-                    Apply the store credit when shopping with any of our select partner footwear merchants.
-(Nike.com, Finishline.com, Carters, and Target.com)
+                    Start shopping! Apply the store credit when shopping with any of our select partner footwear merchants.
+(Nike.com, Finishline.com, Carters, and Target.com).
                     </span>
                   </p>
                 </div>
