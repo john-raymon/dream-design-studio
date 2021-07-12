@@ -14,11 +14,11 @@ export default function Home() {
         <meta name="description" content="Earn store credit for every shoe your child outgrows" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="relative overflow-x-hidden w-full">
+      <main className="relative overflow-hidden w-full">
         <div className="w-full mx-auto max-w-6xl px-6">
           <div className="w-full flex items-center justify-between mt-12 flex-wrap">
             <div className="w-full lg:w-3/5 space-y-2">
-              <p className="text-5xl">
+              <p className="text-4xl md:text-5xl">
                 Earn store credit
                 for every shoe your
                 child outgrows
@@ -41,40 +41,40 @@ export default function Home() {
             </div>
           </div>
           <div className="relative w-full flex flex-col colorful-background mt-8 lg:mt-10 pb-8">
-            <p className="w-full text-left text-5xl mt-4 z-10">
+            <p className="w-full text-left text-4xl md:text-5xl mt-4 z-10">
               How does it work ?
             </p>
-            <ul className="flex -mx-6 lg:-mx-4 mt-8 flex-wrap pr-10 md:px-10 lg:px-0 w-full sm:w-4/6 md:5/6 self-center lg:w-full">
-              <li className="px-6 lg:px-4 w-full lg:w-1/3">
+            <ul className="flex lg:-mx-5 mt-8 flex-wrap md:px-10 lg:px-0 w-full sm:w-4/6 md:5/6 self-center lg:w-full">
+              <li className="lg:px-3 w-full lg:w-1/3">
                 <div className="_rounded bg-gradient-1 w-full aspect-w-1 aspect-h-1">
-                  <p className="text-4xl pl-12 pt-12">
+                  <p className="flex flex-col mt-14 text-6xl md:px-8 px-10 w-full">
                     1.
                     <br/>
-                    <span className="block text-2xl lg:text-lg leading-tight pt-5 pr-10">
+                    <span className="text-left block text-lg leading-tight pt-6">
                       Send us a picture of your child&apos;s shoe. 
                       We&apos;ll review it and give you a price estimate along with a shipping label to print and ship the shoe.
                     </span>
                   </p>
                 </div>
               </li>
-              <li className="px-6 lg:px-3 w-full lg:w-1/3">
-                <div className="_rounded bg-gradient-2 w-full aspect-w-1 aspect-h-1">
-                  <p className="text-4xl pl-12 pt-12">
+              <li className="lg:px-3 w-full lg:w-1/3">
+                <div className="_rounded bg-gradient-2 justify-center w-full aspect-w-1 aspect-h-1">
+                  <p className="flex flex-col mt-14 text-6xl md:px-8 px-10 w-full">
                     2.
                     <br/>
-                    <span className="block text-2xl lg:text-lg leading-tight pt-5 pr-10">
+                    <span className="text-left block text-lg leading-tight pt-6">
                       When we recieve the shoe, we&apos;ll send you
                       store credit for the price of the shoe.
                     </span>
                   </p>
                 </div>
               </li>
-              <li className="px-6 lg:px-3 w-full lg:w-1/3">
+              <li className="lg:px-3 w-full lg:w-1/3">
                 <div className="_rounded bg-gradient-3 w-full aspect-w-1 aspect-h-1 transition-all">
-                  <p className="text-4xl pl-12 pt-12">
+                  <p className="flex flex-col mt-14 text-6xl md:px-8 px-10 w-full">
                     3.
                     <br/>
-                    <span className="block text-2xl lg:text-lg leading-tight pt-5 pr-10">
+                    <span className="text-left block text-lg leading-tight pt-6">
                     Start shopping! Apply the store credit when shopping with any of our select partner footwear merchants.
 (Nike.com, Finishline.com, Carters, and Target.com).
                     </span>
