@@ -76,7 +76,6 @@ export default function Home() {
                     <br/>
                     <span className="text-left block text-lg leading-tight pt-6">
                     Start shopping! Apply the store credit when shopping with any of our select partner footwear merchants.
-(Nike.com, Finishline.com, Carters, and Target.com).
                     </span>
                   </p>
                 </div>
