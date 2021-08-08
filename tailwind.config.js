@@ -12,9 +12,13 @@ module.exports = {
         _widest: '0.3em',
         __widest: '.5em',
       },
-    },
+    }
   },
-  variants: {},
+  variants: {
+    extend: {
+      display: ['hover', 'focus'],
+     },
+  },
   plugins: [
     require('@tailwindcss/aspect-ratio'),
   ],

@@ -4,7 +4,13 @@ import { TextField, Button } from 'lite-react-ui';
 import { useState } from 'react';
 
 export default function Home() {
-  const [emailAddress, setEmailAddress] = useState('');
+  const [toggle, setToggle] = useState(false);
+
+  function handleMouseEnter(e) {
+    if (!toggle) {
+      setToggle(!toggle);
+    }
+  }
 
   return (
     <div>
@@ -15,9 +21,19 @@ export default function Home() {
       </Head>
       <main className="relative w-full h-full bg-black flex flex-col items-center">
         <div className="absolute flex-col flex justify-center h-full left-0 top-0 -ml-10">
-          <p className="text-white text-base uppercase tracking-__widest flex text-opacity-80 transform -rotate-90">
-            {/* &nbsp; HELLO@DRREAMDESIGNSTUDIO.CO */}
-            &nbsp; ASK US ANYTHING
+          <p onMouseEnter={handleMouseEnter} className={`contact-text text-white text-base uppercase tracking-__widest flex justify-center text-center text-opacity-80 transform -rotate-90`}>
+            <span className={`w-auto ${toggle ? 'typing-demo' : 'cursor-pointer'}`}> 
+            {
+              toggle ?
+              (
+                `HELLO@DRREAMDESIGNSTUDIO.CO`
+              )
+              :
+              (
+                `ASK US ANYTHING`
+              )
+            }
+            </span>
           </p>
         </div>
         <div className="w-1/2 md:w-4/12 mx-auto self-center">
