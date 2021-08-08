@@ -2,32 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
-.colorful-background {
-  @apply relative;
-  &::before {
-    content: '';
-    background: radial-gradient(205.42% 205.42% at 50.45% 243.35%, rgb(251 161 148 / 26%) 59.9%, rgb(61 174 255 / 18%) 85.21%, rgb(236 235 234 / 28%) 100%);
-    position: absolute;
-    width: 150vw;
-    height: 100%;
-    left: -50vw;
-  }
-}
-
-.bg-gradient-1 {
-  background: radial-gradient(153.2% 153.2% at 96.77% -57.27%, #F2994A 0%, rgba(242, 153, 74, 0.01) 77.6%);
-}
-
-.bg-gradient-2 {
-  background: radial-gradient(153.2% 153.2% at 96.77% -57.27%, #FF533D 0%, rgba(242, 153, 74, 0.01) 77.6%);
-}
-
-.bg-gradient-3 {
-  background: radial-gradient(153.2% 153.2% at 96.77% -57.27%, #20681F 0%, rgba(44, 160, 42, 0.01) 77.6%);
-}
-
-._rounded {
-  border-radius: 5.25rem;
+html, body {
+  background: black;
 }
 
 .contact-text {

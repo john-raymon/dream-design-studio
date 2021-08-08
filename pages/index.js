@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { TextField, Button } from 'lite-react-ui';
+import copy from 'copy-to-clipboard';
 import { useState } from 'react';
 
 export default function Home() {
@@ -12,6 +13,10 @@ export default function Home() {
     }
   }
 
+  function handleEmailClick(e) {
+    copy('hello@dreamdesignstudio.co');
+  }
+
   return (
     <div>
       <Head>
@@ -19,14 +24,14 @@ export default function Home() {
         <meta name="description" content="Dream Design Studio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="relative w-full h-full bg-black flex flex-col items-center">
-        <div className="absolute flex-col flex justify-center h-full left-0 top-0 -ml-10">
+      <main className="relative w-full h-full bg-black flex flex-col items-center px-12 py-10">
+        <div className="absolute flex-col flex justify-center h-full left-0 top-0 -mt-20 lg:-mt-0 -ml-40 lg:-ml-32">
           <p onMouseEnter={handleMouseEnter} className={`contact-text text-white text-base uppercase tracking-__widest flex justify-center text-center text-opacity-80 transform -rotate-90`}>
-            <span className={`w-auto ${toggle ? 'typing-demo' : 'cursor-pointer'}`}> 
+            <span onClick={(toggle ? handleEmailClick : null)}className={`w-auto ${toggle ? 'typing-demo' : 'cursor-pointer'}`}> 
             {
               toggle ?
               (
-                `HELLO@DRREAMDESIGNSTUDIO.CO`
+                `HELLO@DREAMDESIGNSTUDIO.CO`
               )
               :
               (
@@ -36,7 +41,7 @@ export default function Home() {
             </span>
           </p>
         </div>
-        <div className="w-1/2 md:w-4/12 mx-auto self-center">
+        <div className="w-7/12 md:w-4/12 mx-auto self-center py-20 lg:py-0">
           <svg width="100%" height="100%" viewBox="0 0 587 588" xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.8">
             <path d="M269.12 543.621L258.157 540.891C256.5 540.478 254.802 539.995 253.062 539.443C251.289 538.912 249.619 538.185 248.052 537.26C246.458 536.328 245.039 535.143 243.794 533.704C242.514 532.287 241.527 530.482 240.831 528.289C240.129 526.124 239.789 523.515 239.812 520.461C239.801 517.429 240.28 513.835 241.249 509.681L246.121 488.797C247.091 484.643 248.252 481.205 249.606 478.483C250.933 475.754 252.386 473.591 253.966 471.995C255.545 470.398 257.22 469.256 258.991 468.569C260.727 467.902 262.51 467.53 264.34 467.451C266.142 467.365 267.953 467.489 269.772 467.823C271.558 468.179 273.279 468.563 274.936 468.976L285.898 471.706L269.12 543.621ZM270.876 476.029C268.974 475.555 267.353 475.418 266.013 475.619C264.645 475.813 263.461 476.454 262.46 477.541C261.425 478.65 260.516 480.265 259.734 482.386C258.945 484.536 258.157 487.295 257.371 490.664L252.165 512.979C251.379 516.347 250.866 519.16 250.627 521.417C250.382 523.702 250.478 525.568 250.917 527.014C251.322 528.481 252.091 529.623 253.222 530.439C254.327 531.249 255.83 531.891 257.732 532.364L260.422 533.034L273.566 476.698L270.876 476.029Z" fill="white"/>
@@ -77,8 +82,8 @@ export default function Home() {
           </svg>
         </div>
         <div>
-          <p className="text-white text-lg uppercase tracking-_widest mx-auto text-center text-opacity-50 pl-2 mt-36">
-            &nbsp; human centered creative technology & design studio
+          <p className="text-white text-lg uppercase tracking-_widest mx-auto text-center text-opacity-50 mt-32 lg:mt-36">
+            human centered creative technology & design studio
           </p>
         </div>
       </main>
