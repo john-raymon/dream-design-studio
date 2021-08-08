@@ -1,7 +1,6 @@
 @tailwind base;
 
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 .colorful-background {
   @apply relative;

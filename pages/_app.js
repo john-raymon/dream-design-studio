@@ -6,18 +6,11 @@ import { Button } from 'lite-react-ui';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="font-base flex flex-col relative min-h-screen w-full bg-rocasole-gray">
-      <div className="z-30 md:z-20 bg-rocasole-gray">
-        <header className="flex container max-w-6xl mx-auto mt-14 px-6">
-          <div className="w-full mx-auto">
-            <div className="w-32 h-32">
-              <Logo />
-            </div>
-          </div>
-        </header>
+    <div className="font-base flex relative min-h-screen w-full bg-black items-center justify-center">
+      <div className="z-30 md:z-20 w-full">
         <Component {...pageProps} />
       </div>
-      <footer className="z-20 w-full p-12 bg-black sticky bottom-0">
+      {/* <footer className="z-20 w-full p-12 bg-black sticky bottom-0">
         <div className="flex flex-col md:flex-row justify-between w-full space-y-6 max-w-6xl mx-auto">
           <div className="mt-6 md:mt-0 order-2 md:order-1 justify-between flex flex-col text-white space-y-6">
             <ul className="flex w-full text-center flex-col md:flex-row md:space-x-4">
@@ -55,7 +48,7 @@ function MyApp({ Component, pageProps }) {
             </Button>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 }
