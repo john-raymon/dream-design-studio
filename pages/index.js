@@ -6,6 +6,7 @@ import { useState } from 'react';
 
 export default function Home() {
   const [toggle, setToggle] = useState(false);
+  const [toggleToast, setToggleToast] = useState(false);
 
   function handleMouseEnter(e) {
     if (!toggle) {
@@ -14,6 +15,12 @@ export default function Home() {
   }
 
   function handleEmailClick(e) {
+    if (toggleToast) {
+      setToggleToast(false);
+      setTimeout(() => setToggleToast(true))
+    } else {
+      setToggleToast(true);
+    }
     copy('hello@dreamdesignstudio.co');
   }
 
@@ -26,8 +33,11 @@ export default function Home() {
       </Head>
       <main className="relative w-full h-full bg-black flex flex-col items-center px-12 py-10">
         <div className="absolute flex-col flex justify-center h-full left-0 top-0 -mt-20 lg:-mt-0 -ml-40 lg:-ml-32">
-          <p onMouseEnter={handleMouseEnter} className={`contact-text text-white text-base uppercase tracking-__widest flex justify-center text-center text-opacity-80 transform -rotate-90`}>
-            <span onClick={(toggle ? handleEmailClick : null)}className={`w-auto ${toggle ? 'typing-demo' : 'cursor-pointer'}`}> 
+          <p onMouseEnter={handleMouseEnter} className={`relative contact-text text-white text-base uppercase tracking-__widest flex justify-center text-center text-opacity-80 transform -rotate-90`}>
+            <div key={toggleToast ? 'copied-toast--active' : 'copied-toast--inactive'} className={`copied-toast mt-12 -ml-24 ${toggleToast ? 'copied-toast--active' : ''}`}>
+              COPIED
+            </div>
+            <span onClick={(toggle ? handleEmailClick : null)}className={`w-auto cursor-pointer ${toggle ? 'typing-demo' : ''}`}> 
             {
               toggle ?
               (
