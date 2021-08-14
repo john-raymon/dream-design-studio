@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { TextField, Button } from 'lite-react-ui';
 import copy from 'copy-to-clipboard';
 import { useState } from 'react';
 
@@ -32,8 +30,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <main className="relative w-full h-full bg-black flex flex-col items-center px-12 py-10">
-        <div className="absolute flex-col flex justify-center h-full left-0 top-0 -mt-52 lg:-mt-0 -ml-44 lg:-ml-32">
-          <p onMouseEnter={handleMouseEnter} className={`relative contact-text text-white text-xs md:text-base uppercase tracking-__widest flex justify-center text-center text-opacity-80 transform -rotate-90`}>
+        <div className="absolute flex-col flex justify-center h-full left-0 top-0 -mt-52 lg:-mt-0 -ml-32">
+          <div onMouseEnter={handleMouseEnter} className={`relative contact-text text-white text-xs md:text-base uppercase tracking-__widest flex justify-center text-center text-opacity-80 transform -rotate-90`}>
             <div key={toggleToast ? 'copied-toast--active' : 'copied-toast--inactive'} className={`copied-toast mt-12 -ml-24 ${toggleToast ? 'copied-toast--active' : ''}`}>
               COPIED
             </div>
@@ -49,7 +47,7 @@ export default function Home() {
               )
             }
             </span>
-          </p>
+          </div>
         </div>
         <div className="relative w-7/12 md:w-4/12 lg:w-3/12 mx-auto self-center py-20 lg:py-0 flex">
           <div className="absolute left-0 top-0 right-0 bottom-0 m-auto flex items-center justify-center w-full h-full spinspin-2">

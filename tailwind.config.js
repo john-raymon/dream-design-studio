@@ -1,4 +1,7 @@
 module.exports = {
+  purge: [
+    './pages/**/*.js',
+  ],
   theme: {
     fontFamily: {
       base: 'Fjalla One',
