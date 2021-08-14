@@ -29,7 +29,7 @@ export default function Home() {
       <Head>
         <title>Dream Design Studio</title>
         <meta name="description" content="Dream Design Studio" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <main className="relative w-full h-full bg-black flex flex-col items-center px-12 py-10">
         <div className="absolute flex-col flex justify-center h-full left-0 top-0 -mt-52 lg:-mt-0 -ml-44 lg:-ml-32">
