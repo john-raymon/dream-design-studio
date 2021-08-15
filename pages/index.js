@@ -30,11 +30,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <main className="relative w-full h-full bg-black flex flex-col items-center px-12 py-10">
+        <div key={toggleToast ? 'copied-toast--active' : 'copied-toast--inactive'} className={`copied-toast ${toggleToast ? 'copied-toast--active' : ''}`}>
+          COPIED
+        </div>
         <div className="absolute flex-col flex justify-center h-full left-0 top-0 -mt-52 lg:-mt-0 -ml-32">
-          <div onMouseEnter={handleMouseEnter} className={`relative contact-text text-white text-xs md:text-base uppercase tracking-__widest flex justify-center text-center text-opacity-80 transform -rotate-90`}>
-            <div key={toggleToast ? 'copied-toast--active' : 'copied-toast--inactive'} className={`copied-toast mt-12 -ml-24 ${toggleToast ? 'copied-toast--active' : ''}`}>
-              COPIED
-            </div>
+          <div onMouseEnter={handleMouseEnter} className={`relative contact-text text-white text-xs lg:text-base uppercase tracking-__widest flex justify-center text-center text-opacity-80 transform -rotate-90`}>
             <span onClick={(toggle ? handleEmailClick : null)}className={`w-auto cursor-pointer ${toggle ? 'typing-demo' : ''}`}> 
             {
               toggle ?
@@ -93,7 +93,7 @@ export default function Home() {
 
         </div>
         <div>
-          <p className="text-white text-xs md:text-lg uppercase tracking-_widest mx-auto text-center text-opacity-50 mt-32 lg:mt-36">
+          <p className="text-white text-xs lg:text-lg uppercase tracking-_widest mx-auto text-center text-opacity-50 mt-32 lg:mt-36">
             human centered creative technology & design studio
           </p>
         </div>

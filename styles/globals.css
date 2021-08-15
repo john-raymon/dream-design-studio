@@ -33,7 +33,7 @@ html, body {
 .contact-text {
   min-width: 318px;
   max-width: 318px;
-  @screen md {
+  @screen lg {
     min-width: 420px;
     max-width: 420px;
   }
@@ -50,25 +50,32 @@ html, body {
 }
 
 .copied-toast {
-  @apply absolute text-sm p-2 bg-gray-400 bg-opacity-30 rounded-xl transform rotate-90 tracking-wider;
+  @apply absolute text-sm p-2 bg-gray-400 bg-opacity-30 text-white rounded-xl tracking-wider;
+  left: 0px;
+  margin-top: 7rem;
+  margin-left: 4rem;
+  @screen lg {
+    margin-top: 19rem;
+    margin-left: 8rem;
+  }
   opacity: 0;
 }
 
 .copied-toast--active {
-  animation: slide-down 1.5s forwards;
+  animation: slide-down 1.8s forwards;
 }
 
 @keyframes slide-down {
   0% {
-     transform: rotate(90deg) translateY(-40px) scale(0.9); 
+     transform: translateY(-40px) scale(0.9); 
      opacity: 1;
   }
   50% {
-      transform: rotate(90deg) translateY(-40px) scale(1); 
+      transform: translateY(-40px) scale(1); 
       opacity: 1;
   }
   100% {
-      transform: rotate(90deg) translateY(-100px) scale(1);
+      transform: translateY(-100px) scale(1);
       opacity: 0;
   }
 }
